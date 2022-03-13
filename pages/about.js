@@ -291,7 +291,7 @@ function About() {
 
 
 
-  <div className='flex flex-col items-center w-[100%] justify-start  overflow-y-auto  overflow-x-hidden '>
+  <div className='flex flex-col items-center w-[100%] justify-start ml-10 overflow-y-auto  overflow-x-hidden '>
     <ProfileCard/>
     <CurrentFeed/>
   </div>
