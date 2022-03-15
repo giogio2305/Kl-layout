@@ -3,7 +3,7 @@ import avatar from '../assets/user.png'
 import Image from 'next/image'
 import {  ArrowNarrowLeftIcon, MinusIcon } from '@heroicons/react/outline'
     
-const ChatBar = () => {
+const ChatBar = ({setChatOpen, chatOpen}) => {
     const ChatItems = [
         {
             name: 'random',
@@ -74,7 +74,7 @@ const ChatBar = () => {
 
     ];
   return (
-    <div className='fixed top-[70px] right-0 h-[100%] w-20  float-right  flex z-0'> 
+    <div className='fixed top-[70px] right-0 h-full w-20  float-right  flex z-0'> 
     <div className='d-flex items-center justify-center bg-slate-100 text-blue-600 w-28 h-full'>
         <div className='w-20 h-[90%] bg-slate-100  overflow-hidden'>
             
@@ -90,7 +90,7 @@ const ChatBar = () => {
                 }
             
         </div>
-        <div className='w-20 h-[8%] max-h-[8%] bg-[#005b82] z-10 fixed bottom-0 inline-flex items-center justify-center'>
+        <div className='w-20 h-[8%] cursor-pointer max-h-[8%] bg-[#005b82] z-10 fixed bottom-0 inline-flex items-center justify-center' onClick={()=>setChatOpen(!chatOpen)}>
                 <MinusIcon className="h-10 w-19 text-[#e86e04]"/>
         </div>
     </div>

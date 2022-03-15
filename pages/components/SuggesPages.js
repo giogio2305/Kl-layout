@@ -33,7 +33,7 @@ function SuggesPages() {
     ];
   return (
     <div className=' flex flex-col items-center justify-center mx-1 w-[268px] h-[492px] rounded shadow-lg bg-white'>
-    <div className='font-semibold text-xl text-slate-600'>
+    <div className='font-semibold text-lg text-slate-600'>
     Suggestion de pages
     </div>
     <div className='flex flex-col items-center justify-center h-[360px] w-[98%] my-3'>

@@ -21,12 +21,12 @@ import CurrentFeed from './components/CurrentFeed'
 import OchatBar from './components/Navbar/OchatBar'
 import ChatBar from './components/ChatBar'
 import ChatBox from './components/ChatBox'
+import CurrentProfil from './components/CurrentProfil'
+import CurrentMedia from './components/CurrentMedia'
 
-function About() {
+function Multimedias() {
     const [sideOpen, setSideOpen] = useState(false);
     const [chatOpen, setChatOpen] = useState(false);
-    const [chatBox, setChatBox] = useState(true);
-    const [chatReduce, setChatReduce] = useState(false);
    
    const OsideBar  = () => {
      const color = '#005b82';
@@ -275,37 +275,36 @@ function About() {
    }
   return (
     <div className='flex items-start justify-start overflow-y-hidden bg-slate-300'>
-   <NavBar/>
-    {
-      sideOpen 
-       ?
-       <OsideBar />
-      :
-      <SideBar  />
-}
-
-
-
-  <div className='flex flex-col items-center w-[100%] justify-start md:ml-8 overflow-y-auto  overflow-x-hidden '>
-    <ProfileCard/>
-    <CurrentFeed/>
-  </div>
+    <NavBar/>
+     {
+       sideOpen 
+        ?
+        <OsideBar />
+       :
+       <SideBar  />
+ }
  
-
-  {
-      chatOpen 
-       ?
-       <OchatBar setChatOpen={setChatOpen} chatOpen={chatOpen}/>
-      :
-      <ChatBar  setChatOpen={setChatOpen} chatOpen={chatOpen} />
-}
+ 
+ 
+   <div className='flex flex-col items-center w-[100%] justify-start md:ml-8 overflow-y-auto  overflow-x-hidden '>
+   <ProfileCard/>
+   <CurrentMedia/>
+   </div>
   
-  <ChatBox chatBox={chatBox} chatReduce={chatReduce} setChatBox={setChatBox} setChatReduce={setChatReduce}/>
-  
-
-
-    </div>
+ 
+   {
+       chatOpen 
+        ?
+        <OchatBar setChatOpen={setChatOpen} chatOpen={chatOpen}/>
+       :
+       <ChatBar  setChatOpen={setChatOpen} chatOpen={chatOpen} />
+ }
+   
+   
+ 
+ 
+     </div>
   )
 }
 
-export default About
+export default Multimedias
