@@ -21,7 +21,7 @@ function CurrentFeed() {
             <SuggesPages/>  
             </div>
         {/* middle side feed*/}
-            <div className='flex flex-col items-center justify-start h-[1420px] max-h-[1420px]'>
+            <div className=' sticky flex flex-col items-center justify-start h-[1420px] max-h-[1420px]'>
             
             <Klap/>
 
@@ -29,6 +29,15 @@ function CurrentFeed() {
                 <div className='h-full w-[68px] bg-[#005b82] flex items-center justify-center rounded-l'><NewspaperIcon className="h-5 w-5 text-[#e86e04]"/></div>
                 <div className='flex  items-center justify-center text-center mx-12 text-base '>Aucune actualité disponible actuellement</div>
             </div>
+
+            <div className='h-[728px] w-[524px] my-2 rounded bg-white block'>
+                <div className='w-full h-[60px] bg-slate-400 rounded-t'></div>
+                <div className='w-full h-[62%] bg-slate-600 '></div>
+                <div className='w-full h-[8%] bg-slate-200 '></div>
+                <div className='w-full h-[15%] bg-slate-700 '></div>
+
+            </div>
+
             </div>
         {/* last side feed*/}
             <div className='flex flex-col items-center justify-start h-[1420px] max-h-[1420px]'> 

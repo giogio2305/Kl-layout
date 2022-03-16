@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useState} from 'react'
 import Meteo from './Meteo'
 import avatar from '../assets/user.png'
 import pub from '../assets/landing-bg.jpg'
@@ -10,8 +10,10 @@ import SuggesPages from './SuggesPages'
 import SuggesAmis from './SuggesAmis'
 import { LinkIcon, NewspaperIcon, OfficeBuildingIcon, PencilIcon, PhotographIcon, UserGroupIcon, UserIcon, VideoCameraIcon } from '@heroicons/react/solid'
 import Klap from './Klap'
+import MediaPov from './MediaPov'
 
 function CurrentMedia() {
+    const [isMediaon, setIsMediaon]= useState(false);
   return (
     <div className='flex flex-row items-center justify-center mx-6 mt-4 mb-4 mr-24 '>
          {/* first side feed*/}
@@ -30,7 +32,7 @@ function CurrentMedia() {
     </div>
 
     <div class="grid grid-cols-3 gap-3 mt-3">
-            <div className='h-[174px] w-[174px] rounded shadow-lg bg-white '></div>
+            <div className='h-[174px] w-[174px] rounded shadow-lg bg-white ' onClick={()=> setIsMediaon(!isMediaon)}></div>
             <div className='h-[174px] w-[174px] rounded shadow-lg bg-white '></div>
             <div className='h-[174px] w-[174px] rounded shadow-lg bg-white '></div>
             <div className='h-[174px] w-[174px] rounded shadow-lg bg-white '></div>
@@ -71,6 +73,13 @@ function CurrentMedia() {
 </div>
 </div>
 
+
+
+
+
+   {/*Klap Text*/
+   isMediaon && <MediaPov isMediaon={isMediaon} setIsMediaon={setIsMediaon}/>
+   }
 
     </div>
   )
