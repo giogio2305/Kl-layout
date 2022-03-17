@@ -78,12 +78,12 @@ function NotificationsCart({NotifOpen, setNotifOpen}) {
 },
 ];
   return (
-    <div className='fixed  top-[60px] right-[412px]   flex'> 
+    <div className='fixed  top-[60px] right-[16%] 2xl:right-[22%]   flex'> 
     <div className='d-flex items-center justify-start text-blue-600 w-[368px]  mt-0'>
 
         <div className='w-[308px] h-[478px] overflow-hidden rounded-t-lg bg-white shadow-lg px-2  overflow-x-hidden'>
             <div className='inline-flex items-center justify-between m-3 w-[95%]'>
-            <div className='text-slate-600 text-xl font-semibold'>Notifications</div>
+            <div className='text-slate-600 text-lg font-semibold'>Notifications</div>
             <XIcon className="h-6 w-6 text-slate-600 ml-3 cursor-pointer" onClick={()=> setNotifOpen(!NotifOpen)} />
             </div>
 

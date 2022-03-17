@@ -28,7 +28,7 @@ function Klap() {
 {/*Klap Text*/}
 <input type="checkbox" id="my-modal-3" class="modal-toggle"/>
 <div class="modal">
-  <div class="modal-box relative bg-white w-[684px] h-[484px] rounded">
+  <div class="modal-box relative bg-white w-[684px] h-[468px] rounded">
     <label for="my-modal-3" class="btn btn-sm btn-circle bg-white hover:bg-gray-500 hover:text-white border-0 absolute right-2 top-2">✕</label>
     
     <div className='flex  items-start justify-start'>
@@ -102,7 +102,7 @@ function Klap() {
 {/*Klap image*/}
 <input type="checkbox" id="my-modal-5" class="modal-toggle"/>
 <div class="modal">
-  <div class="modal-box relative bg-white w-[694px] h-[644px] rounded no-scrollbar">
+  <div class="modal-box relative bg-white w-[694px] h-[468px] rounded no-scrollbar">
     <label for="my-modal-5" class="btn btn-sm btn-circle bg-white hover:bg-gray-500 hover:text-white border-0 absolute right-2 top-2">✕</label>
     
     <div className='flex  items-start justify-start'>
@@ -143,7 +143,7 @@ function Klap() {
 {/*Klap video*/}
 <input type="checkbox" id="my-modal-6" class="modal-toggle"/>
 <div class="modal">
-  <div class="modal-box relative bg-white w-[694px] h-[696px] rounded">
+  <div class="modal-box relative bg-white w-[694px] h-[472px] rounded no-scrollbar">
     <label for="my-modal-6" class="btn btn-sm btn-circle bg-white hover:bg-gray-500 hover:text-white border-0 absolute right-2 top-2">✕</label>
     
     <div className='flex  items-start justify-start'>

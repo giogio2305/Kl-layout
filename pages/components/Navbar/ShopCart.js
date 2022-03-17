@@ -6,12 +6,12 @@ import {  BanIcon, ChatAlt2Icon, DotsVerticalIcon, TrashIcon, UserCircleIcon, XI
   
 function ShopCart({setShopOpen, shopOpen}) {
   return (
-    <div className='fixed  top-[60px] right-[632px]   flex'> 
+    <div className='fixed  top-[60px] right-[32%] 2xl:right-[36%]  flex'> 
     <div className='d-flex items-center justify-start text-blue-600 w-[368px]  mt-0'>
 
         <div className='w-[308px] h-[478px] overflow-hidden rounded-t-lg bg-white shadow-lg px-6  overflow-x-hidden'>
             <div className='inline-flex items-center justify-between m-3 w-[95%]'>
-            <div className='text-slate-600 text-xl font-semibold'>Panier</div>
+            <div className='text-slate-600 text-lg font-semibold'>Panier</div>
             <XIcon className="h-6 w-6 text-slate-600 ml-3 cursor-pointer" onClick={()=> setShopOpen(!shopOpen)} />
             </div>
 

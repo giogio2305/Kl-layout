@@ -21,7 +21,7 @@ function NavBar() {
 
 
   return (  
-<nav class=" fixed w-[100%]   px-1 sm:px-4 m-0 py-3 bg-[#005b82] border border-x-0 border-t-0 border-b-[6px]  border-b-orange-500 overflow-hidden z-50">
+<nav class=" fixed w-[100%]   px-1 sm:px-4  py-3 bg-[#005b82] border border-x-0 border-t-0 border-b-[6px]  border-b-orange-500  z-30">
 <div class="container flex flex-wrap justify-between items-center">
 <a href="#" class="flex items-center pl-[108px]">
 <span class="self-center text-sm font-black whitespace-nowrap dark:text-white">KLAPEERS ACTUALITÉS</span>
@@ -45,7 +45,7 @@ function NavBar() {
 </button>
 </div>
 
-<div class="relative hidden justify-between items-center  w-60 md:flex md:w-auto md:order-2" id="mobile-menu-3">
+<div class="hidden justify-between items-center  w-60 md:flex md:w-auto md:order-2" id="mobile-menu-3">
 <ul class="flex flex-col mt-4 md:flex-row md:space-x-5 md:mt-0 md:text-sm md:font-medium">
 <li  className={`ml-1   d-flex justify-center items-center text-center py-2.5 px-2 w-10 h-10 rounded-full ${shopOpen ? 'bg-gray-800':'bg-transparent'} hover:bg-gray-800 cursor-pointer`} onClick={()=>setShopOpen(!shopOpen)}>
 <a href="#" class="block  text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-white" aria-current="page"><ShoppingCartIcon className="h-6 w-6 text-slate-100"/></a>
@@ -65,7 +65,6 @@ function NavBar() {
  <MailIcon className="h-6 w-6 text-slate-100"/>
  </a>
 </li>
-{kmailOpen && <KmailWidget setKmailOpen={setKmailOpen} kmailOpen={kmailOpen}/>}
 
 
 <li className={`ml-1   d-flex justify-center items-center text-center py-2 px-2 w-10 h-10 rounded-full ${MsgOpen ? 'bg-gray-800':'bg-transparent'} hover:bg-gray-800 cursor-pointer`} onClick={()=>setMsgOpen(!MsgOpen)}>
@@ -83,14 +82,13 @@ function NavBar() {
 </ul>
 </div>
 
-<div className='md:order-3 relative inline-flex items-center justify-center' >
-<div  className='dropdown dropdown-end  d-flex justify-center items-center text-center py-2 w-10 h-10 rounded-full bg-orange-500 cursor-pointer'  >
-<span tabindex="0"className='text-white font-bold text-base '>MG</span>
-<ul tabindex="0" class="menu dropdown-content p-2 shadow bg-base-100 rounded-box w-52 mt-4 z-50">
-          <li><a>Item 1</a></li> 
-          <li><a>Item 2</a></li>
+<div className='md:order-3 relative inline-flex items-center justify-center mr-[-40px] ' >
+<label  tabindex="0" className='dropdown dropdown-end  d-flex justify-center items-center text-center py-2 w-10 h-10 rounded-full bg-orange-500 cursor-pointer'  >
+<span className='text-white font-bold text-base '>MG</span>
+<ul tabindex="0" class="menu dropdown-content p-2 shadow bg-white rounded-lg w-52 h-52 mt-4">
+
         </ul>
-</div>
+</label>
 
 <div  className='ml-2   d-flex justify-center items-center text-center py-2 px-2 w-10 h-10 rounded-full bg-transparent hover:bg-gray-800 cursor-pointer' >
 <span className='text-white font-bold text-base '><QuestionMarkCircleIcon className="h-6 w-6 text-slate-100"/></span>

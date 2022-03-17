@@ -5,38 +5,44 @@ import pub from '../assets/landing-bg.jpg'
 import dim from '../assets/a2530054195_10.jpg'
 import Link from 'next/link'
 import Image from 'next/image'
-import { PlusSmIcon } from '@heroicons/react/outline'
 import SuggesPages from './SuggesPages'
 import SuggesAmis from './SuggesAmis'
-import { LinkIcon, NewspaperIcon, PencilIcon, PhotographIcon, UserIcon, VideoCameraIcon } from '@heroicons/react/solid'
+import { LinkIcon,HeartIcon, NewspaperIcon, PencilIcon, PhotographIcon, UserIcon, VideoCameraIcon,BanIcon, ChatAlt2Icon, DotsVerticalIcon, TrashIcon, UserCircleIcon, UserGroupIcon, ShareIcon } from '@heroicons/react/solid'
 import Klap from './Klap'
+import FeedCart from './FeedCart'
 
 
 function CurrentFeed() {
+    const OptionsItems=[
+        {
+            name: 'Modifier la publication',
+            icon: <PencilIcon className="h-7 w-7 text-slate-600"/>,
+        },
+        {
+            name: 'Supprimer la publication',
+            icon: <TrashIcon className="h-7 w-7 text-slate-600"/>,
+        },
+    ]
   return (
-    <div className='flex flex-row items-center justify-center mx-6 mt-2 mb-4 '>
+    <div className=' flex flex-row items-start justify-start mx-2 mt-3 mb-2 '>
         {/* first side feed*/}
-            <div className='flex flex-col items-center justify-start h-[1420px] max-h-[1420px]'>
+            <div className='sticky flex flex-col items-center justify-start'>
             <Meteo/>
             <SuggesPages/>  
             </div>
         {/* middle side feed*/}
-            <div className=' sticky flex flex-col items-center justify-start h-[1420px] max-h-[1420px]'>
+            <div className=' sticky flex flex-col items-center justify-start '>
             
             <Klap/>
 
-            <div className='flex  items-center justify-start w-[524px] h-[60px] rounded shadow-lg bg-white mx-4'>
+            {/*<div className='flex  items-center justify-start w-[524px] h-[60px] rounded shadow-lg bg-white mx-4'>
                 <div className='h-full w-[68px] bg-[#005b82] flex items-center justify-center rounded-l'><NewspaperIcon className="h-5 w-5 text-[#e86e04]"/></div>
                 <div className='flex  items-center justify-center text-center mx-12 text-base '>Aucune actualité disponible actuellement</div>
-            </div>
+                </div>*/}
 
-            <div className='h-[728px] w-[524px] my-2 rounded bg-white block'>
-                <div className='w-full h-[60px] bg-slate-400 rounded-t'></div>
-                <div className='w-full h-[62%] bg-slate-600 '></div>
-                <div className='w-full h-[8%] bg-slate-200 '></div>
-                <div className='w-full h-[15%] bg-slate-700 '></div>
-
-            </div>
+                    <FeedCart/>
+                    <FeedCart/>
+                    <FeedCart/>
 
             </div>
         {/* last side feed*/}

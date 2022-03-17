@@ -75,8 +75,8 @@ const ChatBar = ({setChatOpen, chatOpen}) => {
     ];
   return (
     <div className='fixed top-[70px] right-0 h-full w-20  float-right  flex z-0'> 
-    <div className='d-flex items-center justify-center bg-slate-100 text-blue-600 w-28 h-full'>
-        <div className='w-20 h-[90%] bg-slate-100  overflow-hidden'>
+    <div className='d-flex items-center justify-center  text-blue-600 w-28 h-full'>
+        <div className='w-20 h-[90%] bg-white  overflow-hidden'>
             
                 {
                     ChatItems.map((item, index)=>{

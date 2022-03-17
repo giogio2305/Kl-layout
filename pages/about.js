@@ -274,7 +274,7 @@ function About() {
    )
    }
   return (
-    <div className='flex items-start justify-start overflow-y-hidden bg-slate-300'>
+    <div className='flex items-start justify-start overflow-y-hidden bg-[#edf2f6]'>
    <NavBar/>
     {
       sideOpen 
@@ -286,7 +286,7 @@ function About() {
 
 
 
-  <div className='flex flex-col items-center w-[100%] justify-start md:ml-8 overflow-y-auto  overflow-x-hidden '>
+  <div className='flex flex-col items-center w-[100%] justify-start  overflow-y-auto  overflow-x-hidden '>
     <ProfileCard/>
     <CurrentFeed/>
   </div>
