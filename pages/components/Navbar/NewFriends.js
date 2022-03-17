@@ -76,7 +76,7 @@ demande: 'autres',
 }, 
 ];
   return (
-    <div className='fixed  top-[60px] right-[28%] 2xl:right-[32%]   flex'> 
+    <div className='fixed  top-[60px] right-[28%] 2xl:right-[32%]   flex' onMouseLeave={()=> setNfOpen(!NfOpen)}> 
     <div className='d-flex items-center justify-start text-blue-600 w-[368px]  mt-0'>
 
         <div className='w-[308px] h-[478px]  rounded-t-lg bg-white shadow-lg px-6  overflow-x-hidden'>

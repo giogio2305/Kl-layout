@@ -1,6 +1,6 @@
 import React, {useState} from 'react'
-import {  BellIcon, ChatIcon, InboxIcon, MailIcon, MenuIcon, QuestionMarkCircleIcon, ShoppingBagIcon, ShoppingCartIcon, UserAddIcon, UsersIcon} from '@heroicons/react/solid'
-import {  BanIcon, ChatAlt2Icon, DotsVerticalIcon, TrashIcon, UserCircleIcon, XIcon } from '@heroicons/react/outline'
+import {  BellIcon, ChatIcon, InboxIcon, MailIcon, MenuIcon, OfficeBuildingIcon, QuestionMarkCircleIcon, ShoppingBagIcon, ShoppingCartIcon, UserAddIcon, UsersIcon} from '@heroicons/react/solid'
+import {  BanIcon, ChatAlt2Icon, DotsVerticalIcon, LoginIcon, TrashIcon, UserCircleIcon, XIcon } from '@heroicons/react/outline'
 import avatar from '../assets/user.png'
 import Image from 'next/image'
 import Link from 'next/link'
@@ -85,9 +85,63 @@ function NavBar() {
 <div className='md:order-3 relative inline-flex items-center justify-center mr-[-40px] ' >
 <label  tabindex="0" className='dropdown dropdown-end  d-flex justify-center items-center text-center py-2 w-10 h-10 rounded-full bg-orange-500 cursor-pointer'  >
 <span className='text-white font-bold text-base '>MG</span>
-<ul tabindex="0" class="menu dropdown-content p-2 shadow bg-white rounded-lg w-52 h-52 mt-4">
+<ul tabindex="0" class="menu dropdown-content p-2 shadow bg-white rounded-lg w-80 max-h-96 mt-4">
 
-        </ul>
+      <div className='inline-flex items-center justify-start w-full h-16 px-1 hover:bg-slate-50 mb-1 '>
+      <div className='h-12 w-12 relative cursor-pointer '>
+                                        <Image src={avatar} alt='avatar'   layout="fill" objectFit="cover" className='h-16 w-16' />
+        </div>
+
+          <div className='flex flex-col items-start justify-start ml-4'>
+          <div className='mb-1 text-base text-slate-600 font-bold break-words cursor-pointer'>
+              Mbakop Georges Alfred
+          </div>
+
+          <div className='text-xs text-slate-600 font-medium'>
+                    Voir le profil
+            </div>
+          </div>
+
+      </div>
+
+      <div className='text-center text-sm text-slate-600 font-medium bg-gray-100 border-t-2 border-b-2 py-1 cursor-default'>
+      Business Solutions
+      </div>
+
+      <div className='inline-flex items-center justify-start p-3 group'>
+      <OfficeBuildingIcon className="h-6 w-6 text-slate-600 group-hover:text-[#005b82]"/>
+      <div className='text-center text-sm text-slate-600 group-hover:text-[#005b82] font-semibold cursor-pointer ml-4'>
+      Klapeers Dropshipping Center
+      </div>
+      </div>
+
+      <div className='text-center text-sm text-slate-600 bg-gray-100 font-medium border-t-2 border-b-2 py-1 cursor-default'>
+      Mon compte
+      </div>
+
+      <div className='inline-flex items-center justify-start p-3 group'>
+      <ShoppingBagIcon className="h-6 w-6 text-slate-600 group-hover:text-[#005b82] "/>
+      <div className='text-center text-sm text-slate-600 group-hover:text-[#005b82] font-semibold cursor-pointer ml-4'>
+      Mon Klapeers 
+      </div>
+      </div>
+
+      <div className='inline-flex items-center justify-start p-3 group'>
+      <QuestionMarkCircleIcon className="h-6 w-6 text-slate-600 group-hover:text-[#005b82]"/>
+      <div className='text-center text-sm text-slate-600 group-hover:text-[#005b82] font-semibold cursor-pointer ml-4'>
+      Besoin d'aide
+      </div>
+
+      </div>
+      <div className='inline-flex items-center justify-start p-3 group'>
+      <LoginIcon className="h-6 w-6 text-red-600"/>
+      <div className='text-center text-sm text-slate-600 group-hover:text-red-600 font-semibold cursor-pointer ml-4'>
+      Déconnexion
+      </div>
+      </div>
+
+
+      </ul>
 </label>
 
 <div  className='ml-2   d-flex justify-center items-center text-center py-2 px-2 w-10 h-10 rounded-full bg-transparent hover:bg-gray-800 cursor-pointer' >

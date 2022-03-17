@@ -78,7 +78,7 @@ function NotificationsCart({NotifOpen, setNotifOpen}) {
 },
 ];
   return (
-    <div className='fixed  top-[60px] right-[16%] 2xl:right-[22%]   flex'> 
+    <div className='fixed  top-[60px] right-[16%] 2xl:right-[22%]   flex' onMouseLeave={()=> setNotifOpen(!NotifOpen)}> 
     <div className='d-flex items-center justify-start text-blue-600 w-[368px]  mt-0'>
 
         <div className='w-[308px] h-[478px] overflow-hidden rounded-t-lg bg-white shadow-lg px-2  overflow-x-hidden'>
