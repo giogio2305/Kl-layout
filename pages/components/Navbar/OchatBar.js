@@ -195,7 +195,7 @@ const OchatBar = ({chatOpen, setChatOpen}) => {
         <div className='w-[308px] h-[6%]  max-h-[8%] bg-[#005b82] z-10  fixed  inline-flex items-center justify-center'>
                 <div className="text-base  font-semibold text-[#ea7d1d]">
                     <Link href='#'>
-                    Tout voir dans Contacts
+                    Tous les contacts
                     </Link>
                     </div>
         </div>

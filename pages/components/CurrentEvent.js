@@ -1,9 +1,12 @@
-import React from 'react'
+import React,{ useState } from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
 import { CalendarIcon, PlusSmIcon } from '@heroicons/react/outline'
 import Kicon from './Kicon'
+import { Switch } from '@headlessui/react'
 function CurrentEvent() {
+  const [enabled, setEnabled] = useState(false)
+  const [live, setLive] = useState(false)
   return (
     <div className='flex flex-row items-center justify-center mx-6 mt-4 mb-4 '>
 
@@ -27,6 +30,7 @@ function CurrentEvent() {
 <input type="checkbox" id="my-modal-3" class="modal-toggle"/>
 <div class="modal">
   <div class="modal-box relative bg-white w-[694px] h-[644px] rounded no-scrollbar">
+
     <label for="my-modal-3" class="btn btn-sm btn-circle bg-white hover:bg-gray-500 hover:text-white border-0 absolute right-2 top-2">✕</label>
     
     <div className='flex  items-start justify-start'>
@@ -62,12 +66,36 @@ function CurrentEvent() {
         <div className='flex  items-start justify-between w-[422px] m-4 mb-3'>
         <div className='flex flex-col items-start justify-start'>
         <div className="py-4 text-sm font-medium">Evènement public ?</div>
-        <input type="text" class="text-sm font-medium   w-[207px] input input-bordered   rounded-lg bg-white border border-1 border-slate-300"></input>
+        <Switch
+        checked={enabled}
+        onChange={setEnabled}
+        className={`${enabled ? 'bg-orange-500' : 'bg-gray-400'}
+          relative inline-flex flex-shrink-0 h-[36px] w-[72px] border-2 border-transparent rounded-full cursor-pointer transition-colors ease-in-out duration-200 focus:outline-none focus-visible:ring-2  focus-visible:ring-white focus-visible:ring-opacity-75`}
+      >
+        <span className="sr-only">Use setting</span>
+        <span
+          aria-hidden="true"
+          className={`${enabled ? 'translate-x-9' : 'translate-x-0'}
+            pointer-events-none inline-block h-[32px] w-[32px] rounded-full bg-white shadow-lg transform ring-0 transition ease-in-out duration-200`}
+        />
+      </Switch>
        </div>
 
         <div className='flex flex-col items-end justify-start'>
         <div className="py-4 text-sm font-medium">En live ?</div>
-        <input type="text" class="text-sm font-medium   w-[207px] input input-bordered   rounded-lg bg-white border border-1 border-slate-300"></input>
+        <Switch
+        checked={live}
+        onChange={setLive}
+        className={`${live ? 'bg-orange-500' : 'bg-gray-400'}
+          relative inline-flex flex-shrink-0 h-[36px] w-[72px] border-2 border-transparent rounded-full cursor-pointer transition-colors ease-in-out duration-200 focus:outline-none focus-visible:ring-2  focus-visible:ring-white focus-visible:ring-opacity-75`}
+      >
+        <span className="sr-only">Use setting</span>
+        <span
+          aria-hidden="true"
+          className={`${live ? 'translate-x-9' : 'translate-x-0'}
+            pointer-events-none inline-block h-[32px] w-[32px] rounded-full bg-white shadow-lg transform ring-0 transition ease-in-out duration-200`}
+        />
+      </Switch>
         </div>
         </div>
 

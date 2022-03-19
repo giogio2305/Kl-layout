@@ -104,12 +104,12 @@ demande: 'autres',
                                     Demande: {item.demande}
                                     </div>
                         </div>
-                        <div  className='mx-2   d-flex justify-center items-center text-center py-1 px-1 w-7 h-7 rounded-full bg-transparent hover:bg-gray-200 cursor-pointer' >
-                        <span className='text-white font-bold text-base '><CheckIcon className="h-5 w-5 text-slate-600"/></span>
+                        <div  className='mx-2   d-flex justify-center items-center text-center py-1 px-1 w-7 h-7 rounded-full bg-transparent hover:bg-gray-100 cursor-pointer' >
+                        <span className='text-white font-bold text-base '><CheckIcon className="h-5 w-5 text-green-600"/></span>
                         </div>
 
-                        <div  className='mx-2   d-flex justify-center items-center text-center py-1 px-1 w-7 h-7 rounded-full bg-transparent hover:bg-gray-200 cursor-pointer' >
-                        <span className='text-white font-bold text-base '><MinusIcon className="h-5 w-5 text-slate-600"/></span>
+                        <div  className='mx-2   d-flex justify-center items-center text-center py-1 px-1 w-7 h-7 rounded-full bg-transparent hover:bg-gray-100 cursor-pointer' >
+                        <span className='text-white font-bold text-base '><XIcon className="h-5 w-5 text-red-600"/></span>
                         </div>
                     </div>
             

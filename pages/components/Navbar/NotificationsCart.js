@@ -129,7 +129,7 @@ function NotificationsCart({NotifOpen, setNotifOpen}) {
         
         <div className='w-[308px] h-[28] p-2 bg-[#005b82] z-10 rounded-b-lg fixed  inline-flex items-center justify-center'>
                 <div className="text-sm  font-semibold text-white">
-                Liste de vos notifications
+                Toutes vos notifications
                     </div>
         </div>
     </div>

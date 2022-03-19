@@ -6,7 +6,7 @@ import avatar from '../assets/user.png'
 function ProfileCard() {
   return (
       <div className='flex flex-col items-center justify-start w-[1128px]  mx-3 mt-28 mb-0 shadow-lg z-100'>
-          <div className='bg-white w-full h-[340px] rounded-t-lg  bg-gradient-to-r from-purple-500 to-pink-500'></div>
+          <div className='w-full h-[340px] rounded-t-lg  bg-gradient-to-r from-purple-500 to-pink-500'></div>
           
           <div className='z-2 relative bg-white w-full h-[97px] rounded-b-lg flex px-2 pl-6 items-center justify-between'>
              

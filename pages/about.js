@@ -305,7 +305,7 @@ function About() {
   
   <ChatBox chatBox={chatBox} chatReduce={chatReduce} setChatBox={setChatBox} setChatReduce={setChatReduce}/>
   
-  <div className='absolute flex items-center justify-start top-60 left-[18%] h-[60vh] w-[64vw] rounded-lg'>
+  {/* <div className='absolute flex items-center justify-start top-60 left-[18%] h-[60vh] w-[64vw] rounded-lg'> 
 
 
     <div className='w-[68%] flex flex-col items-center justify-start h-full bg-white rounded-l'>
@@ -384,7 +384,7 @@ function About() {
     </div>
 
 
-    <div className='h-[78%] w-full'>
+    <div className='h-[420px] w-full'>
 
       </div>
 
@@ -398,7 +398,7 @@ function About() {
                     </div>
                     </div>
     </div>
-</div>
+ </div> */}
 
     </div>
   )

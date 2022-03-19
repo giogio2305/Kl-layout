@@ -27,6 +27,7 @@ a {
 svg path {
   stroke-width: 1.6;
 }
+
 @layer utilities {
   @variants responsive {
     /* Chrome, Safari and Opera */
