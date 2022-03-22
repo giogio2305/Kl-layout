@@ -283,7 +283,7 @@ function Quiz() {
  
  
  
-   <div className='flex flex-col items-center w-[100%] justify-start  overflow-y-auto  overflow-x-hidden '>
+   <div className='flex flex-col items-center w-[100%] min-h-screen justify-start  overflow-y-auto  overflow-x-hidden' >
      <Header title='Klapeers Duel Quizz'/>
      <QuizzList/>
      {/* <AudioCall/> */}
